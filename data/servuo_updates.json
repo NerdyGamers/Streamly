@@ -1,0 +1,18 @@
+{
+  "ServUO": {
+    "Highlights": {
+      "Publish 57.4": {
+        "Description": "Moved to new SDK project format and retired Roslyn CSC in favour of DotNET CLI, preparing for push to DotNET 8 LTS. Improved networking for handling high-load scenarios. Various community contributions.",
+        "Documentation": "https://github.com/ServUO/ServUO/releases/tag/57.4.1"
+      }
+    }
+  },
+  "UltimaOnline": {
+    "Highlights": {
+      "Publish 116.3": {
+        "Description": "Latest server maintenance and bug fixes supporting seasonal events.",
+        "Documentation": "https://uo.com/2024/07/09/publish-116-3/"
+      }
+    }
+  }
+}
