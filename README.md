@@ -12,7 +12,7 @@ ServUO Assistant is an AI companion built to support ServUO shard administrators
 
 - Script Snippet Wizardry 🧙‍♂️: The assistant conjures up ready-to-use ServUO script snippets. This magic helps both newcomers and seasoned shard admins speed up their development.
 
-- Update Oracle 📜: Always in the loop, the assistant taps into the latest happenings of the ServUO and Ultima Online worlds. Whether it's a fresh publish or a minor tweak, it's your go-to source for the most recent and relevant information.
+- Update Oracle 📜: Always in the loop, the assistant automatically pulls the latest publishes and news directly from official ServUO and Ultima Online sources. Whether it's a fresh publish or a minor tweak, it's your go-to source for the most recent and relevant information.
 
 - A Personal Touch 🎨: Decked out with custom CSS and the potential for further personalization, the assistant's UI/UX shines, offering a user experience that's both engaging and aesthetically pleasing.
 
