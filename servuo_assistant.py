@@ -3,9 +3,9 @@ import streamlit as st
 import logging
 from PIL import Image, ImageEnhance
 import time
-import json
 import base64
 from openai import OpenAI, OpenAIError
+from update_fetcher import load_game_updates
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -93,17 +93,6 @@ def load_and_enhance_image(image_path, enhance=False):
     return img
 
 
-@st.cache_data(show_spinner=False)
-def load_game_updates():
-    """Load the latest ServUO and Ultima Online updates from a local JSON file."""
-    try:
-        with open("data/servuo_updates.json", "r") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        logging.error(f"Error loading JSON: {str(e)}")
-        return {}
-
-
 def format_highlights(game_name, data):
     highlights = data.get("Highlights", {})
     if not highlights:
@@ -141,6 +130,13 @@ def initialize_conversation():
         {
             "role": "system",
             "content": "You were created by Madie Laine, an OpenAI Researcher.",
+        },
+        {
+            "role": "system",
+            "content": (
+                "When providing code examples, generate ServUO scripts and avoid "
+                "creating Streamlit applications."
+            ),
         },
         {"role": "assistant", "content": assistant_message},
     ]
